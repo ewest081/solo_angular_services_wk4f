@@ -1,0 +1,20 @@
+body {
+    background-color: black;
+}
+
+.container {
+    background-color: white;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    border-bottom: 5px solid black;
+}
+
+.color {
+    background-color: #00acb0;
+    color: white;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="thetaApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Theta's gonna Thate!</title>
+
+    <link rel="stylesheet" href="styles/stylesheet.css">
+    <script src="vendors/angular/angular.min.js"></script>
+    <script src="assets/scripts/client.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>10 Things I Theta 'bout You!</h1>
+        <div ng-controller="MainController">
+            <p>1. Cohort Name: {{theta.title}}</p>
+            <p>2. Cohort Number: {{theta.cohortNumber}}</p>
+            <p>3. Symbol: <span ng-bind-html="theta.symbol"></span></p>
+            <p>4. Count down to Graduation: <span id="countdown">{{theta.daysTillGrad}}</span></p>
+            <p>5. Mascot: {{theta.mascot}}</p>
+            <p>6. Motto: "{{theta.motto}}"</p>
+            <p>7. Percent of class using a Mac: {{theta.pctUsingMac}}%</p>
+            <p>8. Color on walls: <span class="color">{{theta.color}}</span></p>
+            <p>9. Instructors:
+                <ul>
+                    <li ng-repeat="teacher in teachers">Name: {{teacher.name}}, Specialty: {{teacher.specialty}}</li>
+                </ul>
+            </p>
+            <p>10. Roster:
+                <ul>
+                    <li ng-repeat="person in names">{{person.name}}</li>
+                 </ul>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
