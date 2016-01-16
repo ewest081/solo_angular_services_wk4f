@@ -10,10 +10,6 @@ app.use(express.static('server/public'));
 
 app.use('/', index);
 
-app.get('/getMyThing', function(request, response){
-   response.send("This works?")
-});
-
 var server = app.listen(3000, function(){
     var port = server.address().port;
     console.log('Listening on port', port);
