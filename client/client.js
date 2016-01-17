@@ -60,7 +60,7 @@ gradDate = function(dt, id) {
             var minutes = Math.floor((distance % _hour) / _minute);
             var seconds = Math.floor((distance % _minute) / _second);
 
-            document.getElementById(id).innerHTML = days + " Days, ";
+            document.getElementById(id).innerHTML = days + " Days ";
             document.getElementById(id).innerHTML += hours + ":";
             document.getElementById(id).innerHTML += minutes + ":";
             document.getElementById(id).innerHTML += seconds;
